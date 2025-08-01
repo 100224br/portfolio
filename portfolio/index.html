@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio van Brandon Wijngaarde - Softwareontwikkelaar, Game Developer, en Creatieve Maker." />
+  <meta name="theme-color" content="#e63946" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle fill='%23e63946' cx='50' cy='50' r='50'/><text x='50%' y='58%' font-size='50' text-anchor='middle' fill='white' font-family='Montserrat' dy='.3em'>B</text></svg>">
+  <title>Mijn Portfolio - Brandon Wijngaarde</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo" aria-label="Logo">MijnPortfolio</div>
+    <button class="burger" aria-label="Menu openen" aria-controls="main-nav" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="main-nav" aria-label="Hoofdnavigatie">
+      <a href="#" aria-current="page">Home</a>
+      <a href="#projects">Projecten</a>
+      <a href="#skills">Vaardigheden</a>
+      <a href="#about">Over Mij</a>
+      <a href="#connect">Connect</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" aria-label="Introductie">
+      <div class="hero-content">
+        <h1>Digitale Meesterwerken Maken</h1>
+        <p>Ideeën tot leven brengen met prachtig design en innovatie.</p>
+        <a href="#projects" class="btn" role="button">Bekijk Mijn Werk</a>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projecten</h2>
+      <div class="project-grid">
+        <a href="https://100206.stu.sd-lab.nl/Beroeps/Ontkoking/home/index.php?classId=afc1e462-db61-4b09-9ca3-f385d95e5e42&assignmentId=775da4a6-4e16-45da-8ba6-57f51e8f15e9&submissionId=20f988a7-6b19-7343-6260-cf221c049cbd" class="project-card" target="_blank" rel="noopener" aria-label="Bekijk ChefZ project">
+          <div class="project-info">
+            <h3>ChefZ</h3>
+            <p>Een website waar je recepten kan vinden en maken.</p>
+          </div>
+        </a>
+        <a href="https://100224.stu.sd-lab.nl/ramen/index.php?page=menu" class="project-card" target="_blank" rel="noopener" aria-label="Bekijk Yume Ramen project">
+          <div class="project-info">
+            <h3>Yume Ramen</h3>
+            <p>Een digitale restauratn waar je ramen kan bestellen.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Vaardigheden</h2>
+      <div class="skills-grid">
+        <div class="skill-card" tabindex="0">
+          <div class="skill-icon" aria-hidden="true">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML</h3>
+          <div class="skill-bar" aria-label="HTML vaardigheid">
+            <div class="skill-progress" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-card" tabindex="0">
+          <div class="skill-icon" aria-hidden="true">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3>CSS</h3>
+          <div class="skill-bar" aria-label="CSS vaardigheid">
+            <div class="skill-progress" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-card" tabindex="0">
+          <div class="skill-icon" aria-hidden="true">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <div class="skill-bar" aria-label="JavaScript vaardigheid">
+            <div class="skill-progress" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-card" tabindex="0">
+          <div class="skill-icon" aria-hidden="true">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>C#</h3>
+          <div class="skill-bar" aria-label="C# vaardigheid">
+            <div class="skill-progress" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-card" tabindex="0">
+          <div class="skill-icon" aria-hidden="true">
+            <i class="fab fa-php"></i>
+          </div>
+          <h3>PHP</h3>
+          <div class="skill-bar" aria-label="PHP vaardigheid">
+            <div class="skill-progress" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-card" tabindex="0">
+          <div class="skill-icon" aria-hidden="true">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <h3>Unity</h3>
+          <div class="skill-bar" aria-label="Unity vaardigheid">
+            <div class="skill-progress" style="width: 80%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">Over Mij</h2>
+      <div class="about-content">
+        <p>
+          Hallo, ik ben Brandon, een enthousiaste softwareontwikkelaar in opleiding aan het Grafisch Lyceum. Mijn passie ligt bij game development, coderen en het bouwen van innovatieve applicaties. Ik vind het tof om techniek en creativiteit te combineren en ben altijd op zoek naar nieuwe uitdagingen om mijn skills te verbeteren.<br><br>
+          Daarnaast heb ik ervaring met webservices, SQLite-databases en Android-apps in Kotlin. Ik houd ervan om te leren, te experimenteren en mijn projecten visueel aantrekkelijk en technisch solide te maken.<br><br>
+          In mijn vrije tijd verdiep ik me graag in de nieuwste technologieën en werk ik aan persoonlijke projecten om mijn vaardigheden verder te ontwikkelen. Of het nu gaat om games, grafische effecten of efficiënte code, ik geniet van het creatieve proces achter softwareontwikkeling.
+        </p>
+      </div>
+    </section>
+    <!-- Connect Section -->
+    <section class="section connect" id="connect" aria-labelledby="connect-title">
+      <h2 id="connect-title">Connect Met Mij</h2>
+      <div class="connect-grid">
+        <a href="img/CV nederlands.pdf" class="connect-card" target="_blank" rel="noopener" aria-label="Download CV (PDF)">
+          <div class="connect-icon">
+            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+          </div>
+          <h3>Download CV</h3>
+          <p>Bekijk mijn volledige curriculum vitae</p>
+        </a>
+        <a href="https://www.linkedin.com/in/brandon-wijngaarde-14b0b234a/" class="connect-card" target="_blank" rel="noopener" aria-label="LinkedIn profiel">
+          <div class="connect-icon">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </div>
+          <h3>LinkedIn</h3>
+          <p>Laten we connecten op LinkedIn</p>
+        </a>
+        <a href="https://github.com/100224br" class="connect-card" target="_blank" rel="noopener" aria-label="GitHub profiel">
+          <div class="connect-icon">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p>Bekijk mijn projecten en code</p>
+        </a>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <form action="#" method="post" autocomplete="on">
+        <input type="text" name="name" placeholder="Uw Naam" required aria-label="Uw Naam">
+        <input type="email" name="email" placeholder="Uw E-mail" required aria-label="Uw E-mail">
+        <textarea name="message" rows="6" placeholder="Uw Bericht" required aria-label="Uw Bericht"></textarea>
+        <button type="submit">Verstuur Bericht</button>
+      </form>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MijnPortfolio. Alle rechten voorbehouden.</p>
+  </footer>
+  <script>
+    // Smooth Click Animation Effect
+    document.querySelectorAll('.btn').forEach(button => {
+      button.addEventListener('click', function() {
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          this.style.transform = 'scale(1)';
+        }, 150);
+      });
+    });
+
+    // Burger menu functionaliteit
+    const burger = document.querySelector('.burger');
+    const nav = document.getElementById('main-nav');
+    burger.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+      document.body.classList.toggle('no-scroll', !expanded);
+    });
+  </script>
+</body>
+</html>
