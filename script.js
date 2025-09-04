@@ -17,3 +17,8 @@ burger.addEventListener('click', function() {
   nav.classList.toggle('nav-open');
   document.body.classList.toggle('no-scroll', !expanded);
 });
+
+// Contactformulier: redirect instellen en succesmelding tonen
+document.addEventListener('DOMContentLoaded', function() {
+  // geen extra logica nodig voor FormSubmit met thanks.html redirect
+});

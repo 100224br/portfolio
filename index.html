@@ -11,7 +11,7 @@
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle fill='%23e63946' cx='50' cy='50' r='50'/><text x='50%' y='58%' font-size='50' text-anchor='middle' fill='white' font-family='Montserrat' dy='.3em'>B</text></svg>">
   <title>Mijn Portfolio - Brandon Wijngaarde</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -20,28 +20,43 @@
 <body>
   <!-- Header / Navigation -->
   <header>
-    <div class="logo" aria-label="Logo">MijnPortfolio</div>
-    <button class="burger" aria-label="Menu openen" aria-controls="main-nav" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav id="main-nav" aria-label="Hoofdnavigatie">
-      <a href="#" aria-current="page">Home</a>
-      <a href="#projects">Projecten</a>
-      <a href="#skills">Vaardigheden</a>
-      <a href="#about">Over Mij</a>
-      <a href="#connect">Connect</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="header-inner">
+      <div class="logo" aria-label="Logo">Brandon Wijngaarde</div>
+      <button class="burger" aria-label="Menu openen" aria-controls="main-nav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="main-nav" aria-label="Hoofdnavigatie">
+        <a href="#" aria-current="page">Home</a>
+        <a href="#projects">Projecten</a>
+        <a href="#skills">Vaardigheden</a>
+        <a href="#about">Over Mij</a>
+        <a href="#connect">Connect</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    
+    </div>
   </header>
   <!-- Hero Section -->
   <main>
     <section class="hero" aria-label="Introductie">
-      <div class="hero-content">
-        <h1>Digitale Meesterwerken Maken</h1>
-        <p>Ideeën tot leven brengen met prachtig design en innovatie.</p>
-        <a href="#projects" class="btn" role="button">Bekijk Mijn Werk</a>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>Digitale Meesterwerken Maken</h1>
+          <p>Ideeën tot leven brengen met prachtig design en innovatie.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn" role="button">Bekijk Mijn Werk</a>
+            <a href="#contact" class="btn btn-ghost" role="button">Neem Contact Op</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+        </div>
       </div>
     </section>
     <!-- Projects Section -->
@@ -211,12 +226,29 @@
     <!-- Contact Section -->
     <section class="section contact" id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact</h2>
-      <form action="#" method="post" autocomplete="on">
-        <input type="text" name="name" placeholder="Uw Naam" required aria-label="Uw Naam">
-        <input type="email" name="email" placeholder="Uw E-mail" required aria-label="Uw E-mail">
-        <textarea name="message" rows="6" placeholder="Uw Bericht" required aria-label="Uw Bericht"></textarea>
-        <button type="submit">Verstuur Bericht</button>
-      </form>
+      <div class="connect-grid" role="list">
+        <a href="mailto:100224@glr.nl" class="connect-card" role="listitem" aria-label="Stuur een e-mail">
+          <div class="connect-icon">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </div>
+          <h3>E-mail</h3>
+          <p>100224@glr.nl</p>
+        </a>
+        <a href="tel:+31600000000" class="connect-card" role="listitem" aria-label="Bel mij">
+          <div class="connect-icon">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+          </div>
+          <h3>Telefoon</h3>
+          <p>+31 0658816999</p>
+        </a>
+        <a href="#contact" class="connect-card" role="listitem" aria-label="Locatie">
+          <div class="connect-icon">
+            <i class="fas fa-location-dot" aria-hidden="true"></i>
+          </div>
+          <h3>Locatie</h3>
+          <p>Zuidland, NL</p>
+        </a>
+      </div>
     </section>
   </main>
   <!-- Footer -->
