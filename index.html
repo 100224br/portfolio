@@ -5,15 +5,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Portfolio van Brandon Wijngaarde - Softwareontwikkelaar, Game Developer, en Creatieve Maker." />
-  <meta name="theme-color" content="#e63946" />
+    content="Portfolio van Brandon Wijngaarde - Softwareontwikkelaar, Game Developer, en Creatieve Maker. Bekijk mijn projecten in Unity, React, JavaScript en meer." />
+  <meta name="keywords" content="Brandon Wijngaarde, softwareontwikkelaar, game developer, Unity, React, JavaScript, TypeScript, portfolio, web development" />
+  <meta name="author" content="Brandon Wijngaarde" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#14f195" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://brandonwijngaarde.nl/" />
+  <meta property="og:title" content="Brandon Wijngaarde - Softwareontwikkelaar & Game Developer" />
+  <meta property="og:description" content="Portfolio van Brandon Wijngaarde - Softwareontwikkelaar, Game Developer, en Creatieve Maker. Bekijk mijn projecten in Unity, React, JavaScript en meer." />
+  <meta property="og:image" content="https://brandonwijngaarde.nl/img/og-image.jpg" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://brandonwijngaarde.nl/" />
+  <meta property="twitter:title" content="Brandon Wijngaarde - Softwareontwikkelaar & Game Developer" />
+  <meta property="twitter:description" content="Portfolio van Brandon Wijngaarde - Softwareontwikkelaar, Game Developer, en Creatieve Maker." />
+  <meta property="twitter:image" content="https://brandonwijngaarde.nl/img/og-image.jpg" />
+  
   <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle fill='%23e63946' cx='50' cy='50' r='50'/><text x='50%' y='58%' font-size='50' text-anchor='middle' fill='white' font-family='Montserrat' dy='.3em'>B</text></svg>">
-  <title>Mijn Portfolio - Brandon Wijngaarde</title>
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle fill='%2314f195' cx='50' cy='50' r='50'/><text x='50%' y='58%' font-size='50' text-anchor='middle' fill='black' font-family='Inter' dy='.3em'>B</text></svg>">
+  <title>Brandon Wijngaarde - Softwareontwikkelaar & Game Developer</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"></noscript>
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,7 +48,7 @@
         <span></span>
       </button>
       <nav id="main-nav" aria-label="Hoofdnavigatie">
-        <a href="#" aria-current="page">Home</a>
+        <a href="#hero" aria-current="page">Home</a>
         <a href="#projects">Projecten</a>
         <a href="#skills">Vaardigheden</a>
         <a href="#about">Over Mij</a>
@@ -38,45 +58,126 @@
     
     </div>
   </header>
-  <!-- Hero Section -->
-  <main>
-    <section class="hero" aria-label="Introductie">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <h1>Digitale Meesterwerken Maken</h1>
-          <p>Ideeën tot leven brengen met prachtig design en innovatie.</p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn" role="button">Bekijk Mijn Werk</a>
-            <a href="#contact" class="btn btn-ghost" role="button">Neem Contact Op</a>
-          </div>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="ring ring-1"></div>
-          <div class="ring ring-2"></div>
-          <div class="ring ring-3"></div>
-          <div class="orb orb-a"></div>
-          <div class="orb orb-b"></div>
-        </div>
-      </div>
-    </section>
+     <!-- Hero Section -->
+   <main>
+     <section class="hero" id="hero" aria-label="Introductie">
+       <div class="hero-container">
+         <div class="hero-content">
+           <div class="hero-badge">
+             <span>Softwareontwikkelaar & Game Developer</span>
+           </div>
+           <h1 class="hero-title">
+             <span class="title-line">Digitale</span>
+             <span class="title-line highlight">Meesterwerken</span>
+             <span class="title-line">Maken</span>
+           </h1>
+           <p class="hero-description">
+             Ideeën tot leven brengen met prachtig design en innovatie. 
+             Van concept tot code, ik transformeer visies in werkelijkheid.
+           </p>
+           <div class="hero-stats">
+             <div class="stat-item">
+               <span class="stat-number">10+</span>
+               <span class="stat-label">Projecten</span>
+             </div>
+             <div class="stat-item">
+               <span class="stat-number">8+</span>
+               <span class="stat-label">Technologieën</span>
+             </div>
+             <div class="stat-item">
+               <span class="stat-number">100%</span>
+               <span class="stat-label">Passie</span>
+             </div>
+           </div>
+           <div class="hero-actions">
+             <a href="#projects" class="btn btn-primary" role="button">
+               <span>Bekijk Mijn Werk</span>
+               <i class="fas fa-arrow-right"></i>
+             </a>
+             <a href="#contact" class="btn btn-secondary" role="button">
+               <span>Neem Contact Op</span>
+               <i class="fas fa-envelope"></i>
+             </a>
+           </div>
+         </div>
+         <div class="hero-visual" aria-hidden="true">
+           <div class="visual-container">
+             <div class="floating-elements">
+               <div class="ring ring-1"></div>
+               <div class="ring ring-2"></div>
+               <div class="ring ring-3"></div>
+               <div class="orb orb-a"></div>
+               <div class="orb orb-b"></div>
+               <div class="orb orb-c"></div>
+             </div>
+             <div class="tech-showcase">
+               <div class="tech-icon">
+                 <i class="fab fa-js-square"></i>
+                 <span>JavaScript</span>
+               </div>
+               <div class="tech-icon">
+                 <i class="fab fa-react"></i>
+                 <span>React</span>
+               </div>
+               <div class="tech-icon">
+                 <i class="fas fa-gamepad"></i>
+                 <span>Unity</span>
+               </div>
+               <div class="tech-icon">
+                 <i class="fas fa-code"></i>
+                 <span>C#</span>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
     <!-- Projects Section -->
     <section class="section projects" id="projects" aria-labelledby="projects-title">
       <h2 id="projects-title">Projecten</h2>
       <div class="project-grid">
-        <a href="./img/Descending Highrise.7z"
-          class="project-card" target="_blank" rel="noopener" aria-label="Bekijk ChefZ project">
-          <div class="project-info">
-            <h3>Descending Highrise</h3>
-            <p>Een 2D Game gemaakt in Unity.</p>
+        <div class="project-card" tabindex="0" role="article" aria-labelledby="project-1-title">
+          <div class="project-image" aria-hidden="true">
+            <div class="project-placeholder">
+              <i class="fas fa-gamepad"></i>
+            </div>
           </div>
-        </a>
-        <a href="https://github.com/100224br/Honden-Tinder" class="project-card" target="_blank"
-          rel="noopener" aria-label="Bekijk Yume Ramen project">
           <div class="project-info">
-            <h3>Honden Tinder</h3>
-            <p>Een Tinder app voor mensen met honden.</p>
+            <h3 id="project-1-title">Descending Highrise</h3>
+            <p>Een innovatieve 2D platformer game ontwikkeld in Unity. Het doel was om een uitdagende spelervaring te creëren met unieke gameplay mechanics.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Game Design</span>
+            </div>
+            <div class="project-actions">
+              <a href="./img/Descending Highrise.7z" class="btn btn-download" target="_blank" rel="noopener">
+                <i class="fas fa-download"></i> Download Game
+              </a>
+            </div>
           </div>
-        </a>
+        </div>
+        <div class="project-card" tabindex="0" role="article" aria-labelledby="project-2-title">
+          <div class="project-image" aria-hidden="true">
+            <div class="project-placeholder">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 id="project-2-title">Honden Tinder</h3>
+            <p>Een sociale app voor hondenliefhebbers om hun huisdieren te matchen. Ontwikkeld met moderne web technologieën voor een soepele gebruikerservaring.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">API</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/100224br/Honden-Tinder" class="btn btn-github" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Skills Section -->
@@ -197,13 +298,16 @@
     <section class="section connect" id="connect" aria-labelledby="connect-title">
       <h2 id="connect-title">Connect Met Mij</h2>
       <div class="connect-grid">
-        <a href="img/CV nederlands.pdf" class="connect-card" target="_blank" rel="noopener"
+        <a href="img/CV nederlands.pdf" class="connect-card cv-download" target="_blank" rel="noopener"
           aria-label="Download CV (PDF)">
           <div class="connect-icon">
             <i class="fas fa-file-pdf" aria-hidden="true"></i>
           </div>
           <h3>Download CV</h3>
           <p>Bekijk mijn volledige curriculum vitae</p>
+          <div class="download-badge">
+            <i class="fas fa-download"></i> PDF
+          </div>
         </a>
         <a href="https://www.linkedin.com/in/brandon-wijngaarde-14b0b234a/" class="connect-card" target="_blank"
           rel="noopener" aria-label="LinkedIn profiel">
@@ -234,12 +338,12 @@
           <h3>E-mail</h3>
           <p>100224@glr.nl</p>
         </a>
-        <a href="tel:+31600000000" class="connect-card" role="listitem" aria-label="Bel mij">
+        <a href="tel:+31658816999" class="connect-card" role="listitem" aria-label="Bel mij">
           <div class="connect-icon">
             <i class="fas fa-phone" aria-hidden="true"></i>
           </div>
           <h3>Telefoon</h3>
-          <p>+31 0658816999</p>
+          <p>+31 6 5881 6999</p>
         </a>
         <a href="#contact" class="connect-card" role="listitem" aria-label="Locatie">
           <div class="connect-icon">
@@ -252,8 +356,34 @@
     </section>
   </main>
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 MijnPortfolio. Alle rechten voorbehouden.</p>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Brandon Wijngaarde</h3>
+          <p>Softwareontwikkelaar & Game Developer</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Navigatie</h4>
+            <a href="#projects">Projecten</a>
+            <a href="#skills">Vaardigheden</a>
+            <a href="#about">Over Mij</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <a href="https://github.com/100224br" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/brandon-wijngaarde-14b0b234a/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:100224@glr.nl">E-mail</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Brandon Wijngaarde. Alle rechten voorbehouden.</p>
+        <p class="footer-made">Gemaakt met ❤️ en moderne web technologieën</p>
+      </div>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>
